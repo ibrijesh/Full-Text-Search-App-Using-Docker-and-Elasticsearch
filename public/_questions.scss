@@ -1,0 +1,161 @@
+#questions{
+    height: 100%;
+    margin-top: 2%;
+    padding:2% 14%;
+    border: 1px solid $color-blue-black;
+    min-height: 380vh;
+    color: $color-white-light;
+}
+
+a{
+    color: $color-blue;
+    text-decoration: none;
+}
+
+
+.gap{
+    margin-bottom: 2.2%;
+}
+
+.questions-header{
+
+    width: 90%;
+    padding: 1% 5%;
+    height: 20vh;
+    display: flex;
+    justify-content:space-between;
+    border-left: 10px solid $color-border;
+    margin-right: 3%;
+
+    h2{
+        font-weight: 370;
+        color: #fff;
+        font-size: 26px;
+    }
+
+
+    p{
+        color: #fff;
+        margin-top: 12%;
+    }
+
+    p:first-of-type{
+        font-size: 13px;
+        color: $color-white-light;
+        margin-top: 12%;
+    }
+
+
+
+    i{
+        font-style: normal;
+        color: $color-white-light;
+        font-weight: 360;
+    }
+
+}
+
+
+
+
+.page-button{
+    margin-top: 11%;
+    margin-right: 18%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+
+    button{
+       
+        width: 100px;
+        padding: 2% 5%;
+        margin-left: 3%;
+        font-size: 12px;
+        border:none;
+        background-color: $color-blue-dark;
+        color: #fff;
+        text-align: center;
+    }
+
+    :hover{
+        background-color: $color-blue;
+        background: $color-blue;
+    }
+
+
+}
+
+
+
+
+.questions-links{
+    
+    width: 77%;
+    min-height: 100%;  
+    padding: 1% 10%;
+    padding-right:13%;
+    border-left: 10px solid $color-border;
+    // border-right: 0.5px solid $color-border;
+
+
+   h4{
+    color: $color-blue;
+    font-weight: 370;
+   }
+
+  p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 1%;
+   }
+   
+}
+
+
+
+.question{ 
+      border-top: 1px solid $color-border;
+      margin-right: 11%;
+
+      h4{
+          margin-top: 1.5%;
+      }
+
+      div{
+          div{
+              margin-top: 1%;
+          }
+      }
+    
+}
+
+
+.tags{
+    display: flex;
+}
+
+.tag{
+    font-size: 12px;
+    margin-right: 2%;
+    padding: 0.2% 0.7%;
+    margin: 0.5%;
+    background-color: $color-tag-bg;
+    border-radius: 2px;
+    margin-bottom: 3%;
+}
+
+
+.bottom-button{
+    margin-left: 35%;
+    button{
+        width: 120px;
+        padding: 2% 5%;
+        margin-left: 3%;
+        font-size: 12px;
+        border:none;
+        background-color: $color-blue-dark;
+        color: #fff;
+        text-align: center;
+    }
+}

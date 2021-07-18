@@ -1,0 +1,248 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  background-color: #2d2d2d;
+  line-height: 1.6;
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  padding: 0.4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #393939;
+}
+
+i {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.stack-overflow-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 3.5%;
+  margin-right: 7%;
+}
+
+.stack-overflow-logo .fa-stack-overflow {
+  font-size: 35px;
+  margin-right: 2px;
+}
+
+.stack-overflow-logo p {
+  font-size: 1.1rem;
+  margin-top: 4%;
+  font-weight: 400;
+}
+
+.search-container {
+  background-color: #2d2d2d;
+  width: 50%;
+  height: 100%;
+  margin-top: 0.6%;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  outline: none;
+  border: 1px solid #697075;
+}
+
+.search-container .fa-search {
+  margin-left: 2%;
+  margin-right: 1%;
+  color: #697075;
+}
+
+.search-container input {
+  height: 100%;
+  width: 90%;
+  outline: none;
+  border: none;
+  background: #2d2d2d;
+  background-color: #2d2d2d;
+  color: #babdc1;
+}
+
+.by-logo {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin-top: 0.5%;
+  margin-left: 5%;
+}
+
+.by-logo img {
+  height: 100%;
+}
+
+#questions {
+  height: 100%;
+  margin-top: 2%;
+  padding: 2% 14%;
+  border: 1px solid #697075;
+  min-height: 380vh;
+  color: #babdc1;
+}
+
+a {
+  color: #3ca4ff;
+  text-decoration: none;
+}
+
+.gap {
+  margin-bottom: 2.2%;
+}
+
+.questions-header {
+  width: 90%;
+  padding: 1% 5%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 10px solid #575757;
+  margin-right: 3%;
+}
+
+.questions-header h2 {
+  font-weight: 370;
+  color: #fff;
+  font-size: 26px;
+}
+
+.questions-header p {
+  color: #fff;
+  margin-top: 12%;
+}
+
+.questions-header p:first-of-type {
+  font-size: 13px;
+  color: #babdc1;
+  margin-top: 12%;
+}
+
+.questions-header i {
+  font-style: normal;
+  color: #babdc1;
+  font-weight: 360;
+}
+
+.page-button {
+  margin-top: 11%;
+  margin-right: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-button button {
+  width: 100px;
+  padding: 2% 5%;
+  margin-left: 3%;
+  font-size: 12px;
+  border: none;
+  background-color: #3070ab;
+  color: #fff;
+  text-align: center;
+}
+
+.page-button :hover {
+  background-color: #3ca4ff;
+  background: #3ca4ff;
+}
+
+.questions-links {
+  width: 77%;
+  min-height: 100%;
+  padding: 1% 10%;
+  padding-right: 13%;
+  border-left: 10px solid #575757;
+}
+
+.questions-links h4 {
+  color: #3ca4ff;
+  font-weight: 370;
+}
+
+.questions-links p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 1%;
+}
+
+.question {
+  border-top: 1px solid #575757;
+  margin-right: 11%;
+}
+
+.question h4 {
+  margin-top: 1.5%;
+}
+
+.question div div {
+  margin-top: 1%;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tag {
+  font-size: 12px;
+  margin-right: 2%;
+  padding: 0.2% 0.7%;
+  margin: 0.5%;
+  background-color: #43525f;
+  border-radius: 2px;
+  margin-bottom: 3%;
+}
+
+.bottom-button {
+  margin-left: 35%;
+}
+
+.bottom-button button {
+  width: 120px;
+  padding: 2% 5%;
+  margin-left: 3%;
+  font-size: 12px;
+  border: none;
+  background-color: #3070ab;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

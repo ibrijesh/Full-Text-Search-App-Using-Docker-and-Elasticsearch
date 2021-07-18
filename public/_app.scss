@@ -1,0 +1,41 @@
+#app{
+ padding: 3% 7%;
+
+
+ input {
+     background-color: #fff;
+     background:#9b9b9b;
+ }
+}
+
+
+.navbar{
+    display: flex;
+    .logo {font-size: 30px;
+        color: #F47F24;
+   } 
+
+}
+
+
+.search{
+    padding: 3% 7%;
+
+    margin: auto;
+    background-color: #fff;
+    color: #000;
+
+    input{
+        margin-bottom: 3%;
+        width: 200px;
+        height: 25px;
+    }
+}
+
+.question-container{
+    padding: 3% 7%;
+    background-color: #fff !important;
+    color: #000;
+    border: #fff 1px solid;
+    height: 20vh;
+}
