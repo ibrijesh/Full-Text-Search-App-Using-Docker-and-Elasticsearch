@@ -4,7 +4,7 @@
 var myapp=new Vue({
     data () {
       return {
-          baseUrl: '127.0.0.1:5000', // API url
+          baseUrl: 'http://localhost:5000', // API url
           searchTerm: 'Hello World', // Default search term
           searchDebounce: null, // Timeout for search bar debounce
           searchResults: [], // Displayed search results

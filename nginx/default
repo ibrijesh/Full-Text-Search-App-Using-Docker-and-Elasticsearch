@@ -7,14 +7,6 @@ server {
 
         sendfile off;
 
-        location / {
-            root  /usr/share/nginx/html;
-            index index.html index.htm;
-            include /etc/nginx/mime.types;
-            try_files $uri $uri/ /index.html;
-        }
-
-
 
        location /api/ {
           proxy_pass http://localhost:5000;

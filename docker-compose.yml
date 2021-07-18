@@ -1,16 +1,49 @@
 version: '3'
 
 services:
-  frontend: # Nginx Server For Frontend App
-    container_name: gs-frontend
-    build: ./
+  api: # Nginx Server For Frontend App
+    container_name: sof-api
+    build: ./esFlask/
     ports:
-      - "8080:80" # Forward site to localhost:8080
+      - "8000:80" # Forward site to localhost:8080
       - "5000:5000"
-    restart: on-failure:20  
+    restart: always
     volumes:
       - ${PWD}/public:/usr/share/nginx/html:ro
       - ${PWD}/server/app.py:/usr/src/app/app.py
       - ${PWD}/nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - elasticsearch
+    links: 
+      - elasticsearch  
+
+
+  frontend: # Node.js App
+    container_name: sof-frontend
+    image: nginx:1.21.1
+    ports:
+      - "7000:80" # Expose API port
+    volumes:
+      - ${PWD}/reverse-nginx/nginx.conf:/etc/nginx/nginx.conf
+    restart: always
+    depends_on:
+      - api
+    links: 
+      - api 
+
+
+
+
+  elasticsearch: # Elasticsearch Instance
+    container_name: sof-search
+    image: ibrijesh/elasticsearch-keyword-based-qa 
+    restart: always
+    environment:
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    ports: # Expose ElasticSearch ports
+      - "9300:9300"
+      - "9200:9200"
 
 

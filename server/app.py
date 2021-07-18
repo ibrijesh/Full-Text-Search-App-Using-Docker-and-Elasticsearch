@@ -17,7 +17,7 @@ from flask import request
 
 def connect2ES():
     # connect to ES on localhost on port 9200
-    es = Elasticsearch([{'host': '20.198.118.206', 'port': 9200}])
+    es = Elasticsearch([{'host': 'elasticsearch', 'port': 9200}])
     if es.ping():
             print('Connected to ES!')
     else:

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  frontend: # Nginx Server For Frontend App
+    container_name: gs-frontend
+    build: ./
+    ports:
+      - "8080:80" # Forward site to localhost:8080
+      - "5000:5000"
+    restart: on-failure:20  
+    volumes:
+      - ${PWD}/public:/usr/share/nginx/html:ro
+      - ${PWD}/server/app.py:/usr/src/app/app.py
+      - ${PWD}/nginx/nginx.conf:/etc/nginx/nginx.conf
+
+
