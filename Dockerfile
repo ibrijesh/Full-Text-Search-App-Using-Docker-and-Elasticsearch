@@ -27,16 +27,16 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Remove defualt nginx setting and add your own setting
 
-WORKDIR /etc/nginx/sites-enabled/
+# WORKDIR /etc/nginx/sites-enabled/
 
-RUN rm -f /etc/nginx/sites-enabled/default
+# RUN rm -f /etc/nginx/sites-enabled/default
 
-COPY nginx/default  /etc/nginx/sites-enabled/default
+# COPY nginx/default  /etc/nginx/sites-enabled/default
 
 
 # copy the entrypoint script
 
-RUN nginx
+# RUN nginx
 
 WORKDIR /usr/src/app
 
