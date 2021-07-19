@@ -1,7 +1,7 @@
 version: '3'
 
-services:
-  api: # Nginx Server For Frontend App
+services: 
+  api: # Flask API  Backend Instance
     container_name: sof-api
     build: ./esFlask/
     ports:
@@ -15,7 +15,7 @@ services:
       - elasticsearch  
 
 
-  frontend: # Node.js App
+  frontend: # Serving  VueJS, Html and CSS using Nginx
     container_name: sof-frontend
     image: nginx:1.21.1
     ports:
@@ -31,7 +31,7 @@ services:
 
 
 
-  reverse-nginx: # Node.js App
+  reverse-nginx: # Reverse Proxy to Frontend Instance
     container_name: sof-proxy
     image: nginx:1.21.1
     ports:
