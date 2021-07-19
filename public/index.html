@@ -63,11 +63,11 @@
 
                 <h2 class="gap">Search Results</h2>
         
-                <p class="gap"> Result for  <i> {{ searchTerm }} </i></p>
+                <p class="gap"> Result for  <i> {{ searchTerm | truncate(63,' ....') }} </i></p>
         
                 <p class="p-white">{{ numHits }} results</p>
         
-               </div>
+            </div>
 
 
             <div class="page-button">

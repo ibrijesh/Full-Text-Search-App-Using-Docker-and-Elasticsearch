@@ -40,10 +40,11 @@ services:
     restart: always
     environment:
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "ES_JAVA_OPTS=-Xms212m -Xmx212m"
       - discovery.type=single-node
+    mem_limit: 524MB  
     ports: # Expose ElasticSearch ports
       - "9300:9300"
       - "9200:9200"
 
-
+      

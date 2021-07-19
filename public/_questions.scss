@@ -36,13 +36,14 @@ a{
 
     p{
         color: #fff;
-        margin-top: 12%;
+        margin-top: 5%;
+     
     }
 
     p:first-of-type{
         font-size: 13px;
         color: $color-white-light;
-        margin-top: 12%;
+    
     }
 
 
@@ -53,6 +54,11 @@ a{
         font-weight: 360;
     }
 
+}
+
+.questions-stats{
+    width: 72%;
+   margin-left: 5%;
 }
 
 

@@ -140,19 +140,23 @@ a {
 
 .questions-header p {
   color: #fff;
-  margin-top: 12%;
+  margin-top: 5%;
 }
 
 .questions-header p:first-of-type {
   font-size: 13px;
   color: #babdc1;
-  margin-top: 12%;
 }
 
 .questions-header i {
   font-style: normal;
   color: #babdc1;
   font-weight: 360;
+}
+
+.questions-stats {
+  width: 72%;
+  margin-left: 5%;
 }
 
 .page-button {
