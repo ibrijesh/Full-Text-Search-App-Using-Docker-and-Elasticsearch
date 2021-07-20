@@ -48,6 +48,4 @@ RUN chmod +x entrypoint.sh
 EXPOSE 5000
 
 
-CMD ["python3","app.py"]
-
-#CMD ["./entrypoint.sh"]
+CMD ["./entrypoint.sh"]
