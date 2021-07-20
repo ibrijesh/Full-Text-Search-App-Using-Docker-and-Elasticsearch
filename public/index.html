@@ -89,7 +89,7 @@
 
         <div  v-for="hit in searchResults" class="question 1">
 
-           <a href="https://stackoverflow.com" target="_blank"><h4>Q: {{ hit._source.title }}</h4></a> 
+           <a :href="`https://stackoverflow.com/questions/${hit._id}`" target="_blank"><h4>Q: {{ hit._source.title }}</h4></a> 
             <p  :inner-html.prop="hit._source.body | truncate(200,' ....') "></p>
 
              <div class="tags">

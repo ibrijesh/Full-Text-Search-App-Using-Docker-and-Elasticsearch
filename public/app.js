@@ -48,16 +48,24 @@ var myapp=new Vue({
 
         this.numHits = response.data.hits.total.value
 
-        console.log(response.data.hits.total.value);
+        
         const path=response.data.hits.hits[0]._source
-        console.log(response.data.hits.hits[0]._source.title);
-        console.log(response.data.hits.hits[0]._source.body);
-        console.log(response.data.hits.hits[0]._source.tag);
+
+
+        // console.log(response.data.hits.total.value);
+        // console.log(response.data.hits.hits[0]._source.title);
+        // console.log(response.data.hits.hits[0]._source.body);
+        // console.log(response.data.hits.hits[0]._source.tag);
+
+
         const t=path.tag
         var tempTag=t.replace(/[\[\]']+/g, '');
-        console.log(tempTag);
+
+        // console.log(tempTag);
+        
         tempTag=tempTag.split(',');
-        console.log(tempTag);
+
+        // console.log(tempTag);
 
         this.resultTitle=path.title
         this.resultBody=path.body
