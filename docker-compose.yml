@@ -34,7 +34,7 @@ services:
     build: ./esFlask/
     ports:
       - "5000:5000"
-    restart: always
+    restart: always   
     volumes:
       - ${PWD}/server/app.py:/usr/src/app/app.py
     depends_on:

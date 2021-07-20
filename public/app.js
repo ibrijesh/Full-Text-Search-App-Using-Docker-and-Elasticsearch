@@ -2,7 +2,7 @@
 var myapp=new Vue({
     data () {
       return {
-          baseUrl: 'http://localhost:5000', // API url
+          baseUrl: '/search', // API url
           searchTerm: 'Hello World', // Default search term
           searchDebounce: null, // Timeout for search bar debounce
           searchResults: [], // Displayed search results
@@ -44,7 +44,7 @@ var myapp=new Vue({
   
       async search () {
 
-        const response = await axios.get(`${this.baseUrl}/search`, { params: { term: this.searchTerm, offset: this.searchOffset } })
+        const response = await axios.get(`${this.baseUrl}`, { params: { term: this.searchTerm, offset: this.searchOffset } })
 
         this.numHits = response.data.hits.total.value
 
