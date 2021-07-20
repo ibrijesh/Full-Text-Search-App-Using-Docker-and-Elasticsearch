@@ -10,13 +10,13 @@ services:
       - ${PWD}/reverse-nginx/nginx.conf:/etc/nginx/nginx.conf
     restart: always
     depends_on:
-      - frontend
-      - flask
+      - vue-frontend
+      - flask-backend
       - elasticsearch
 
 
-  frontend: # Serving  VueJS, Html and CSS using Nginx
-    container_name: frontend
+  vue-frontend: # Serving  VueJS, Html and CSS using Nginx
+    container_name: vue-frontend
     image: nginx:1.21.1
     ports:
       - "8000:80" # Expose API port
@@ -25,13 +25,13 @@ services:
       - ${PWD}/nginx/nginx.conf:/etc/nginx/nginx.conf
     restart: always
     depends_on:
-      - flask      
+      - flask-backend      
 
 
 
-  flask: # Flask API  Backend Instance
-    container_name: flask
-    build: ./esFlask/
+  flask-backend: # Flask API  Backend Instance
+    container_name: flask-backend
+    build: ./server
     ports:
       - "5000:5000"
     restart: always   
@@ -48,9 +48,9 @@ services:
     restart: always
     environment:
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms212m -Xmx212m"
+      - "ES_JAVA_OPTS=-Xms250m -Xmx250m"
       - discovery.type=single-node
-    mem_limit: 524MB  
+    mem_limit: 600MB  
     ports: # Expose ElasticSearch ports
       - "9300:9300"
       - "9200:9200"
