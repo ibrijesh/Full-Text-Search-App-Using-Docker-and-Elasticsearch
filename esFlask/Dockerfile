@@ -20,7 +20,7 @@ RUN apt-get -y install python3-pip
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt ./
+COPY requirements.txt .
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
@@ -41,12 +41,13 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 WORKDIR /usr/src/app
 
 
-COPY  . .
+COPY  entrypoint.sh .
 
 RUN chmod +x entrypoint.sh
 
 EXPOSE 5000
 
-EXPOSE 80
 
-CMD [ "./entrypoint.sh"]
+CMD ["python3","app.py"]
+
+#CMD ["./entrypoint.sh"]

@@ -1,5 +1,6 @@
 user www-data;
 
+
 worker_processes auto;
 
 pid /run/nginx.pid;
@@ -18,11 +19,10 @@ http {
            listen 80;
            server_name localhost 127.0.0.1;
           
-          sendfile on;
+          sendfile off;
 
 
           keepalive_timeout  65;
-
 
           location / {
 

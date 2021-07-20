@@ -1,6 +1,4 @@
 
-
-
 var myapp=new Vue({
     data () {
       return {
