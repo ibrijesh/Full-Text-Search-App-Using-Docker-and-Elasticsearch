@@ -6,6 +6,8 @@ Elasticsearch uses a data structure called an inverted index, which is designed 
 
 During the indexing process, Elasticsearch stores documents and builds an inverted index to make the document data searchable in near real-time. Indexing is initiated with the index API, through which you can add or update a JSON document in a specific index.
 
+<br>
+
 ## You can view live demo of project  at  
 ``` 
 https://ibrijesh.centralindia.cloudapp.azure.com/ 
