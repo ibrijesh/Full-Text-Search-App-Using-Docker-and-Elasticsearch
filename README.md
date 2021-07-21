@@ -45,7 +45,8 @@ docker-compose up -d --build
 
 ### Step 5:
 - go to your favourite browser and  type
-```http://localhost:8080 
+```
+http://localhost:8080 
 ```
 
 
