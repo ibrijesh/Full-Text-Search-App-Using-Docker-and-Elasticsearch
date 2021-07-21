@@ -22,28 +22,25 @@ This project was made to demonstrate that how fast it is to search for keyword b
 - Docker
 - docker-compose
 
-### Steps 1 :
+### Steps 1
 ```
 git clone https://github.com/ibrijesh/stackoverflow-questions-search-using-elasticsearch
 ```
 
-### Step 2 :
+### Step 2
 - open the folder stackoverflow-questions-search-using-elasticsearch 
 ``` 
 cd stackoverflow-questions-search-using-elasticsearch
 ```
 
-### Step 3: 
-- open the terminal in same folder
-
-### Step 4:
+### Step 3
 - Run the commad
 ```
 docker-compose up -d --build  
 ```  
 - wait for few minutes
 
-### Step 5:
+### Step 4
 - go to your favourite browser and  type
 ```
 http://localhost:8080 
