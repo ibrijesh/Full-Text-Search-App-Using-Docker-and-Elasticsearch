@@ -23,12 +23,16 @@ This project was made to demonstrate that how fast it is to search for keyword b
 - docker-compose
 
 ### Steps 1 :
-``` git clone https://github.com/ibrijesh/stackoverflow-questions-search-using-elasticsearch
+```
+git clone https://github.com/ibrijesh/stackoverflow-questions-search-using-elasticsearch
+
 ```
 
 ### Step 2 :
 - open the folder stackoverflow-questions-search-using-elasticsearch 
-``` cd stackoverflow-questions-search-using-elasticsearch
+``` 
+cd stackoverflow-questions-search-using-elasticsearch
+
 ```
 
 ### Step 3: 
