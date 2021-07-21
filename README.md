@@ -1,6 +1,6 @@
 # Stackoverflow questions searching using elasticsearch as database
 
-Aim of this  project was to demonstrate  how fast  is  searching text  using elasticsearch.
+###Aim of this  project was to demonstrate  how fast  is  searching text  using elasticsearch.
 
 Elasticsearch uses a data structure called an inverted index, which is designed to allow very fast full-text searches. An inverted index lists every unique word that appears in any document and identifies all of the documents each word occurs in.
 
