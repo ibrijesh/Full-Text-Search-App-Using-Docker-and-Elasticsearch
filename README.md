@@ -16,7 +16,7 @@ https://ibrijesh.centralindia.cloudapp.azure.com/
 <br>
 <br>
 
-# Web Application Architecture
+# Docker containers Architecture used 
 
 ![stackoverflow](https://user-images.githubusercontent.com/41025295/126460959-2cb7ec8e-84c0-4014-aa4c-5ba5ab119f93.png)
 
