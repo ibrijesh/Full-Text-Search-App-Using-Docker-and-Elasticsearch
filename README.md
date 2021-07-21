@@ -17,7 +17,7 @@ https://ibrijesh.centralindia.cloudapp.azure.com/
 <br>
 
 
-# If you want to run this project or play with this project follow the below steps.
+# If you want to run this project or play with this project  inyour system follow the below steps.
 
 ## Requirements
 
