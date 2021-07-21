@@ -60,6 +60,6 @@ http://localhost:8080
 <br>
 
 ## ❌ How to Avoid  Common Error  
-- Make sure no process is already running on ports 8080 , 8000 ,5000 ,9200 ,9300
+- Make sure that  no other  process is already running on ports 8080 , 8000 ,5000 ,9200 ,9300
 
 
