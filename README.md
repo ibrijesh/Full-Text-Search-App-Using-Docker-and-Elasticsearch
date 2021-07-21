@@ -25,7 +25,8 @@ https://ibrijesh.centralindia.cloudapp.azure.com/
 # System Design of This Project
 <br>
 
-![stackoverflow](https://user-images.githubusercontent.com/41025295/126462222-aae75cc4-36b9-4803-a0b6-48c12846fa4f.png)
+![stackoverflow](https://user-images.githubusercontent.com/41025295/126464128-0e1837d4-647a-4d36-be5c-47a95c34a3c4.png)
+
 
 <br>
 <br>
