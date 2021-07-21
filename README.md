@@ -22,7 +22,7 @@ https://ibrijesh.centralindia.cloudapp.azure.com/
 ## Requirements
 
 - git
-- Docker
+- docker
 - docker-compose
 
 ### Steps 1
