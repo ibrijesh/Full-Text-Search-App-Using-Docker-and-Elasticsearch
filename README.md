@@ -10,7 +10,7 @@ During the indexing process, Elasticsearch stores documents and builds an invert
 
 ## You can view live demo of project  at  
 ``` 
-https://ibrijesh.centralindia.cloudapp.azure.com/ 
+https://search.ibrijesh.tech/
 ```
 
 <br>
