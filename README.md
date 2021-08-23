@@ -22,7 +22,7 @@ https://search.ibrijesh.tech/
 <br>
 <br>
 
-# System Design of This Project
+# Architecture
 <br>
 
 ![stackoverflow](https://user-images.githubusercontent.com/41025295/126470394-bfe16bf1-3a04-4015-bc89-69621bcf32c3.png)
