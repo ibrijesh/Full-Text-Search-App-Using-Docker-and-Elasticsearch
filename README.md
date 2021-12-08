@@ -1,4 +1,4 @@
-# Stackoverflow questions search using elasticsearch as database
+# Stackoverflow questions search using elasticsearch as a database
 
 ### Aim of this  project was to demonstrate  how fast  is  searching text  using elasticsearch as database.
 
