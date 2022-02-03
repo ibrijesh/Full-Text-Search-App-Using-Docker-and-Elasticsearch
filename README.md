@@ -1,4 +1,4 @@
-# Stackoverflow questions search using elasticsearch as a database
+# FULL-TEXT SEARCH APP USING DOCKER AND ELASTICSEARCH
 
 ### Aim of this  project was to demonstrate  how fast  is  searching text  using elasticsearch as database.
 
